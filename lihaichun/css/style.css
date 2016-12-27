@@ -1,0 +1,967 @@
+/*公共类*/
+
+body,
+html {
+	font-family: microsoft yahei, sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #555;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+@charset "utf-8";
+
+/* 禁用iPhone中Safari的字号自动调整*/
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-size: 14px;
+}
+
+
+/* 去除iPhone中默认的input样式*/
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+
+/* input {
+    -webkit-appearance:none;
+    resize: none;
+    
+}*/
+
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+	cursor: pointer;
+	-webkit-appearance: none;
+	resize: none;
+}
+
+
+/* 取消链接高亮*/
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	/*	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+/* 设置HTML5元素为块*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+
+/* 图片自适应*/
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+	/* ie8*/
+	-ms-interpolation-mode: bicubic;
+	/*为了照顾ie图片缩放失真*/
+}
+
+body {
+	font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+	background: #f2f2f2;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*去除移动端默认点击高亮*/
+	overflow-y: scroll;
+}
+
+em,
+i {
+	font-style: normal;
+}
+
+
+/* strong {
+    font-weight: normal;
+}*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+	font-family: 'Adobe 黑体 Std R', Microsoft YaHei, Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Microsoft YaHei;
+}
+
+img {
+	border: none;
+	/*	vertical-align: middle;*/
+	/*vertical-align:bottom;*/
+}
+
+
+/*公用样式完毕*/
+
+.intro {
+	width: 100%;
+	height: 100%;
+	background: url(../images/awsome1-bg.png) no-repeat bottom center;
+	display: table;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+
+/*导航*/
+
+.navbar-custom {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	background-color: #000;
+}
+
+.navbar-custom .navbar-brand i.fa {
+	color: #F4D03F;
+}
+
+.navbar-custom .navbar-brand:focus {
+	outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+	padding: 4px 6px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0;
+}
+
+.navbar-custom a {
+	color: #fff;
+	font-family: "宋体";
+}
+
+.navbar-custom .navbar-brand {
+	font-weight: 600;
+}
+
+.navbar-custom .nav li a {
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+	outline: 0;
+	color: #f1cb34;
+	background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: transparent;
+	color: #f1cb34;
+}
+
+.navbar-custom .nav li.active {
+	outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.navbar-custom .nav li.active a:hover {
+	color: #fff;
+}
+
+@media(min-width:768px) {
+	.navbar-custom {
+		padding: 20px 0;
+		border-bottom: 0;
+		letter-spacing: 1px;
+		background: 0 0;
+		-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+		-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+		transition: background .5s ease-in-out, padding .5s ease-in-out;
+	}
+	.navbar-custom.top-nav-collapse {
+		padding: 0;
+		background: #000;
+	}
+}
+
+.copyrights {
+	text-indent: -9999px;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+.fa-bars1{
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon10.png) no-repeat;
+	background-size: 26px;
+}
+
+/*简历文字*/
+
+.intro .intro-body {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.intro .intro-body .brand-heading {
+	color: #f1cb34;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+}
+
+.intro .intro-body .intro-text {
+	font-size: 18px;
+}
+
+@media(min-width:768px) {
+	.intro {
+		height: 100%;
+		padding: 0;
+	}
+	.intro .intro-body H1 {
+		font-size: 70px;
+		font-weight: 700;
+		letter-spacing: -2px;
+	}
+	.intro .intro-body .intro-text {
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 8px;
+		margin-bottom: 50px;
+		font-family: "宋体";
+	}
+}
+
+.intro .intro-body .brand-heading {
+	color: #f1cb34;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+}
+
+.intro .intro-body .intro-text {
+	font-family: "宋体";
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.btn-circle {
+	width: 70px;
+	height: 70px;
+	margin-top: 40px;
+/*	padding: 7px 16px;*/
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 100%!important;
+	font-size: 40px;
+	color: #F4D03F;
+	background: 0 0;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	margin-bottom: 0px;
+}
+
+.btn-circle:hover,.btn-circle:focus {
+	outline: 0;
+	color: #F4D03F;
+	background: rgba(255, 255, 255, .1);
+}
+
+.btn-circle i.animated {
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes pulse {
+	0% {
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+	50% {
+		-moz-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.copyrights {
+	text-indent: -9999px;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+
+/*基本资料**/
+
+#services {
+	padding: 80px 0px;
+	color: #aaa;
+	background: linear-gradient(to bottom, #6f7275 0%, #31353a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6f7275), color-stop(100%, #31353a));
+	background: -webkit-linear-gradient(top, #6f7275 0%, #31353a 100%);
+	background: -o-linear-gradient(top, #6f7275 0%, #31353a 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6f7275 0%, #31353a 100%);
+	/* IE10+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6f7275', endColorstr='#31353a', GradientType=0);
+	/* IE6-9 */
+}
+
+.section-title.center {
+	padding: 30px 0px;
+}
+
+#services h2 {
+	color: #ddd;
+}
+
+.section-title h2,
+.section-title.center h2 {
+	font-weight: 400;
+	margin-bottom: 30px;
+	font-family: "宋体";
+}
+
+.section-title.center hr {
+	width: 70px;
+	height: 4px;
+	text-align: center;
+	position: relative;
+	background: #F1CB34;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+
+.space {
+	margin-top: 40px;
+}
+
+#services i.fa {
+	width: 120px;
+	height: 120px;
+	padding: 34px 0px;
+	margin-bottom: 15px;
+	border-radius: 50%;
+	background: #474b4f url(../images/icon1.png)no-repeat center center;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	background-size: 60px;
+}
+
+#services i.fa1 {
+	background: #474b4f url(../images/icon2.png)no-repeat center center;
+	background-size: 60px;
+}
+
+#services i.fa2 {
+	background: #474b4f url(../images/icon3.png)no-repeat center center;
+	background-size: 60px;
+}
+
+#services i.fa3 {
+	background: #474b4f url(../images/icon4.png)no-repeat center center;
+	background-size: 60px;
+}
+
+#services h4 {
+	color: #F1CB34;
+	font-family: "宋体";
+}
+
+.service p {
+	margin-top: 10px;
+	font-family: "宋体";
+}
+
+#services .service:hover> i.fa {
+	color: #F4D03F;
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
+	cursor: pointer;
+}
+.fa-angle-double-down1{
+	width: 40px;
+	height: 40px;
+	background: url(../images/top.png) no-repeat;
+	background-size: 40px;
+}
+.fa-terminal1{
+	width:23px;
+	height: 23px;
+	background: url(../images/logo.png) no-repeat;
+	background-size:16px ;    vertical-align: middle;
+}
+/*经验*/
+
+.clearfix {
+	display: block;
+}
+
+.clearfix {
+	display: inline-block;
+}
+.img-responsive{width: 100%;}
+#works {
+	padding: 80px 0px;
+	color: #aaa;
+	background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ccc));
+	background: -webkit-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff 0%, #ccc 100%);
+	/* IE10+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6f7275', endColorstr='#31353a', GradientType=0);
+	/* IE6-9 */
+}
+
+.text-center h2 {
+	color: #333;
+}
+
+#works p {
+	color: #555;
+	font-family: "宋体";
+}
+
+.categories {
+	padding-top: 30px;
+	text-align: center;
+}
+
+ul.cat li {
+	display: inline-block;
+}
+
+ul,
+ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+
+ol.type li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+ol.type li a.active {
+	background: #F1CB34;
+	padding: 4px 8px;
+	border-radius: 4px;
+	color: #fff;
+	font-family: "宋体";
+}
+
+ol.type li a {
+	color: #444;
+	padding: 4px 8px;
+	font-family: "宋体";
+}
+
+ol.type li:after {
+	content: ' | ';
+	margin-left: 20px;
+	color: #444;
+}
+
+ol.type li a:hover {
+	background: #F1CB34;
+	padding: 2px 8px;
+	border-radius: 4px;
+}
+
+.isotope-item {
+	z-index: 2
+}
+
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+
+.isotope,
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.portfolio-item {
+	margin-bottom: 30px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.portfolio-item:hover {
+	margin-bottom: 30px;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.portfolio-item .hover-bg {
+	height: 260px;
+	overflow: hidden;
+	position: relative;
+}
+
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.66);
+	padding: 25% 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.hover-bg .hover-text>h4 {
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.hover-bg .hover-text>i {
+	opacity: 0;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text>i {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+
+#works i.fa {
+	font-size: 20px;
+	padding: 5px;
+	color: #F4D03F;
+}
+
+.hover-text h4 a {
+	color: #fff;
+}
+
+
+/**专业技能***/
+
+#about {
+	padding: 80px 0;
+	color: #444;
+	background: #f4d03f;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #f4d03f 70%, #c3a632 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f4d03f), color-stop(100%, #c3a632));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f4d03f 70%, #c3a632 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f4d03f 70%, #c3a632 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f4d03f 70%, #c3a632 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #f4d03f 70%, #c3a632 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f4d03f', endColorstr='#c3a632', GradientType=0);
+	/* IE6-9 */
+}
+
+#about .about-text {
+	margin-left: 10px;
+}
+
+.fa-users1 {
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon5.png) no-repeat;
+	background-size: 26px;
+	float: left;
+}
+
+.fa-magic1 {
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon6.png) no-repeat;
+	background-size: 26px;
+	float: left;
+}
+
+.fa-check-square-o1 {
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon7.png) no-repeat;
+	background-size: 26px;
+	float: left;
+}
+
+#about .padding-left {
+	margin-left: 50px;
+}
+
+#about H4 {
+	color: #333;
+	font-family: "宋体";
+}
+
+#about p {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-family: "宋体";
+}
+
+
+/**人生经历***/
+
+#team {
+	padding: 80px 0px;
+	color: #444;
+	background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ccc));
+	background: -webkit-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff 0%, #ccc 100%);
+	/* IE10+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6f7275', endColorstr='#31353a', GradientType=0);
+	/* IE6-9 */
+}
+
+#team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+
+img.img-circle.team-img {
+	width: 120px;
+	height: 120px;
+	border: 4px solid transparent;
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+	
+}
+
+img.img-circle.team-img:hover {
+	transform: rotate(360deg) scale(1.2);
+	-webkit-transform: rotate(360deg) scale(1.2);
+	-moz-transform: rotate(360deg) scale(1.2);
+	-o-transform: rotate(360deg) scale(1.2);
+	-ms-transform: rotate(360deg) scale(1.2);
+	border:6px solid #F1CB34;
+}
+
+#team .thumbnail .caption {
+	padding: 9px;
+	color: #5a5a5a;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "宋体";
+}
+
+#team p {
+	font-family: "宋体";
+}
+/******自我评价******/
+#testimonials{
+	background: url(../images/awsome-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ddd;
+    padding: 80px 0;
+}
+#testimonials h2{color: #fff;}
+.owl-carousel .owl-wrapper-outer{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.owl-carousel .owl-item {
+    float: left;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	/* -webkit-backface-visibility: hidden; */
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+}
+#testimonial .item {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#testimonial .item p {
+    font-weight: 500;
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ddd;
+    font-family: "宋体";
+}
+/******联系方式********/
+#contact{
+padding: 80px 0px;
+	color: #444;
+	background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ccc));
+	background: -webkit-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff 0%, #ccc 100%);
+	/* IE10+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6f7275', endColorstr='#31353a', GradientType=0);
+	/* IE6-9 */
+	}
+.fa-map-marker1{
+	width: 40px;
+	height: 40px;
+	background: url(../images/add.png) no-repeat;
+	background-size: 40px;    margin-bottom: 10px;
+	
+}
+.fa-envelope-o1{
+	width: 40px;
+	height: 40px;
+	background: url(../images/emlie.png) no-repeat;
+	background-size: 40px;    margin-bottom: 10px;
+}
+.fa-phone1{
+	width: 40px;
+	height: 40px;
+	background: url(../images/phone.png) no-repeat;
+	background-size: 40px;    margin-bottom: 10px;
+}
+#contact p{
+	font-family: "宋体";
+	font-size: 18px;
+}
+#footer{
+    background: #222222;
+    color: #ddd;
+    padding: 30px 0 25px 0;
+}
+ul.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.iconfont2{
+	width: 26px;
+	height: 26px;
+	background: url(../images/QQ.png) no-repeat;
+	background-size: 26px;display: inline-block;
+}
+.iconfont1{
+	width: 30px;
+	height: 30px;
+	background: url(../images/icon8.png) no-repeat;
+	background-size: 30px;display: inline-block;
+}
+.iconfont3{
+	width: 30px;
+	height: 30px;
+	background: url(../images/icon9.png) no-repeat;
+	background-size: 30px;display: inline-block;
+}
+.my-top {
+    width: 2.86rem;
+    height: 2.86rem;
+    background:url(../images/icon_top.png) no-repeat;
+    z-index: 9999;
+    background-size: 100% 100%;
+    position: fixed;
+    right: 0.71rem;
+    bottom:6rem;
+    cursor: pointer;
+}
