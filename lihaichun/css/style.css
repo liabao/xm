@@ -316,6 +316,7 @@ img {
 		font-size: 70px;
 		font-weight: 700;
 		letter-spacing: -2px;
+	
 	}
 	.intro .intro-body .intro-text {
 		font-size: 20px;
@@ -330,6 +331,7 @@ img {
 	color: #f1cb34;
 	text-transform: uppercase;
 	letter-spacing: -2px;
+	   
 }
 
 .intro .intro-body .intro-text {
@@ -546,6 +548,7 @@ img {
 	/* IE10+ */
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6f7275', endColorstr='#31353a', GradientType=0);
 	/* IE6-9 */
+	overflow: hidden;
 }
 
 .text-center h2 {
@@ -743,6 +746,7 @@ ol.type li a:hover {
 	/* W3C */
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f4d03f', endColorstr='#c3a632', GradientType=0);
 	/* IE6-9 */
+	overflow: hidden;
 }
 
 #about .about-text {
@@ -755,24 +759,45 @@ ol.type li a:hover {
 	background: url(../images/icon5.png) no-repeat;
 	background-size: 26px;
 	float: left;
+	transition:all 0.4s ease-in-out ;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
 }
-
+.fa-users1:hover{
+	transform:scale(1.2) ;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
 .fa-magic1 {
 	width: 26px;
 	height: 26px;
 	background: url(../images/icon6.png) no-repeat;
 	background-size: 26px;
 	float: left;
+	transition:all 0.4s ease-in-out ;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
 }
-
+.fa-magic1:hover{
+	transform:scale(1.2) ;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
 .fa-check-square-o1 {
 	width: 26px;
 	height: 26px;
 	background: url(../images/icon7.png) no-repeat;
 	background-size: 26px;
 	float: left;
+	transition:all 0.4s ease-in-out ;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
 }
-
+.fa-check-square-o1:hover{
+	transform:scale(1.2) ;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
 #about .padding-left {
 	margin-left: 50px;
 }
@@ -787,8 +812,13 @@ ol.type li a:hover {
 	margin-bottom: 30px;
 	font-family: "宋体";
 }
-
-
+#about p:hover{
+	 transform: rotate(-3deg) scale(1);
+	-webkit-transform: rotate(-3deg) scale(1);
+	-moz-transform: rotate(-3deg) scale(1);
+text-shadow: 5px 5px 5px #F60;
+	color: #fff;
+}
 /**人生经历***/
 
 #team {
@@ -909,19 +939,55 @@ padding: 80px 0px;
 	height: 40px;
 	background: url(../images/add.png) no-repeat;
 	background-size: 40px;    margin-bottom: 10px;
-	
+	transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -ms-transition:All 0.4s ease-in-out;
+    
+}
+.fa-map-marker1:hover{
+	transform:translate(0,-10px);
+   -webkit-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
 }
 .fa-envelope-o1{
 	width: 40px;
 	height: 40px;
 	background: url(../images/emlie.png) no-repeat;
 	background-size: 40px;    margin-bottom: 10px;
+	transition: All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -ms-transition:All 0.4s ease-in-out;
+}
+.fa-envelope-o1:hover{
+	transform: translate(0,-10px);
+	-webkit-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
 }
 .fa-phone1{
 	width: 40px;
 	height: 40px;
 	background: url(../images/phone.png) no-repeat;
 	background-size: 40px;    margin-bottom: 10px;
+	transition: All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -ms-transition:All 0.4s ease-in-out;
+}
+.fa-phone1:hover{
+	transform: translate(0,-10px);
+	-webkit-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
 }
 #contact p{
 	font-family: "宋体";
