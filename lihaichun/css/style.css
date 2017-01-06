@@ -479,22 +479,34 @@ img {
 	-moz-transition: all 0.5s ease-out;
 	background-size: 60px;
 }
-
+#services i.fa:hover{
+	background: #474b4f url(../images/icon1by.png)no-repeat center center;
+	background-size: 60px;
+}
 #services i.fa1 {
 	background: #474b4f url(../images/icon2.png)no-repeat center center;
 	background-size: 60px;
 }
-
+#services i.fa1:hover{
+	background: #474b4f url(../images/icon3by.png)no-repeat center center;
+	background-size: 60px;
+}
 #services i.fa2 {
 	background: #474b4f url(../images/icon3.png)no-repeat center center;
 	background-size: 60px;
 }
-
+#services i.fa2:hover{
+	background: #474b4f url(../images/icon3by.png)no-repeat center center;
+	background-size: 60px;
+}
 #services i.fa3 {
 	background: #474b4f url(../images/icon4.png)no-repeat center center;
 	background-size: 60px;
 }
-
+#services i.fa3:hover{
+	background: #474b4f url(../images/icon4by.png)no-repeat center center;
+	background-size: 60px;
+}
 #services h4 {
 	color: #F1CB34;
 	font-family: "宋体";
@@ -601,12 +613,22 @@ ol.type li:after {
 	color: #444;
 }
 
-ol.type li a:hover {
+/*ol.type li a:hover {
 	background: #F1CB34;
 	padding: 2px 8px;
 	border-radius: 4px;
+}*/
+#works i.fa {
+    font-size: 20px;
+    padding: 5px;
+    color: #F4D03F;
 }
-
+.hover-bg .hover-text>i {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: all 0.3s;
+}
 .isotope-item {
 	z-index: 2
 }
